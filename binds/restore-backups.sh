@@ -1,6 +1,9 @@
 #!/bin/bash
 # Tim H 2023
 
+# backups seem to take about 30 minutes per gigabyte
+# https://stackoverflow.com/questions/1493722/mysql-command-for-showing-current-configuration-variables
+
 # took ? minutes, 1.7 GB
 time mysql aminno < /mnt/ashley_dumps_local/aminno_member_email.dump
 
