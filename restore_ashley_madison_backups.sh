@@ -78,13 +78,12 @@ ls -lah /mnt/ashley_dumps_local/*.dump
 # mark the restore script as executable
 chmod u+x "/root/restore-backups.sh"
  
-# start the restore, then exit the screen session with Ctrl+D
+# start the restore, 
 /bin/bash /root/restore-backups.sh
 
-# wait for 7-10 hours...
+# exit the screen session with Ctrl+D
 
-# create a snapshot of the live container
-docker export --output "$HOME/container-backup1.tar" "$CONTAINER_RUNTIME_NAME" 
+# wait for 7-10 hours...
 
 # check disk space utilization of volumes, images, containers
 docker system df -v
