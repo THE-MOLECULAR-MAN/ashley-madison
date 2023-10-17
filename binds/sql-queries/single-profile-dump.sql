@@ -35,4 +35,4 @@ JOIN am_am_member as aam
 JOIN aminno_member_email as ame
     on ame.pnum = am.pnum
 
-WHERE ame.pnum = 123456 \G
+WHERE ame.pnum = REPLACEME \G
