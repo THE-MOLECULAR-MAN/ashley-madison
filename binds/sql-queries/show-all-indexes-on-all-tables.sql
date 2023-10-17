@@ -1,6 +1,7 @@
--- show all indexes for all tables in db
+-- show all indexes for all tables in the current database
 SELECT DISTINCT
     TABLE_NAME,
     INDEX_NAME
 FROM INFORMATION_SCHEMA.STATISTICS
-WHERE TABLE_SCHEMA = 'aminno';
+WHERE TABLE_SCHEMA = database()
+ORDER BY TABLE_NAME, INDEX_NAME;
