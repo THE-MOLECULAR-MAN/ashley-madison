@@ -1,3 +1,4 @@
+-- lists all the tables and columns in the current database
 -- orders it in a way to find duplicate columns easily
 select 
     tab.table_name as table_name,
